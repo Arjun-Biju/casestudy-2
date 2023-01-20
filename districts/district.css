@@ -8,12 +8,6 @@
     height: 50px;
 }
 
-.carousel{
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-
 .navitems a{
     border: 2px solid white;
     margin-left: 20px ;
@@ -27,16 +21,17 @@
     text-shadow: 1px 1px black;
 }
 
-.carousel2{
-    height: 50%;
-    width: 50%;
-    max-height: 450px;
-    margin-bottom: 50px;
-    overflow: hidden;
+.ptext{
+    line-height: 35px;
 }
 
-.carcontain{
-    background-image: linear-gradient(white,rgb(148, 255, 255),white)
+.containtxt{
+    background-color: rgba(50, 248, 248, 0.3);
+}
+
+.containtxt:hover{
+    transform: scale(1.05);
+    transition-duration: 1.5s;
 }
 
 #footer{
