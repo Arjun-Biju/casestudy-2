@@ -3,9 +3,18 @@
     padding: 0;
 }
 
+body{
+    background-image: linear-gradient(rgba(0, 255, 255, 0.300),white,rgba(0, 255, 255, 0.300))
+}
+
 .logo{
     width: 100px;
     height: 50px;
+}
+
+.logo:hover{
+    transform: translateX(5px);
+    transition-duration: 0.5s;
 }
 
 .navitems a{
