@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bodylogin{
+    background-image: url("https://www.hindugodwallpaper.com/images/gods/zoom/1660_kathakali-wallpaper-02.jpg");
+}
+
+.bodysignup{
+    background-image: url("https://i.pinimg.com/originals/99/4c/1c/994c1cd0edc1ef88ef317a5680814ad6.jpg");
+    background-size: cover;
+}
+
+.logo{
+    width: 100px;
+    height: 50px;
+}
+
+.logo:hover{
+    transform: translateX(5px);
+    transition-duration: 0.5s;
+}
+
+.navitems a{
+    border: 2px solid white;
+    margin-left: 20px ;
+    border-radius: 15%;
+}
+
+.navitems a:hover{
+    border: 2px solid greenyellow;
+    border-radius: 25%;
+    background-color: green;
+    text-shadow: 1px 1px black;
+}
+
+.form1{
+    width: 300px;
+    margin-left: 400px;
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.801);
+    padding: 25px;
+    border-radius: 5%;
+}
+
+.form2{
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.801);
+    padding: 25px;
+    border-radius: 5%;
+}

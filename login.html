@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to Kerala Tourism</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</head>
+<body class="bodylogin">
+    <!-- header -->
+    <div class="header">
+        <header>
+            <nav class="navbar navbar-expand-lg bg-danger w-100">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../Index.html"><img class="logo" src="https://kitco.in/userdata/clients/thumb_kerala.jpg" alt="logo"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navitems navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#" style="color: white;">Login</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                          Go to
+                        </a>
+                        <ul class="dropdown-menu me-auto">
+                          <li><a class="dropdown-item" href="/districts/trivandrum.html">Trivandrum</a></li>
+                          <li><a class="dropdown-item" href="/districts/kollam.html">Kollam</a></li>
+                          <li><a class="dropdown-item" href="/districts/pattanamthitta.html">Pathanamthitta</a></li>
+                          <li><a class="dropdown-item" href="/districts/kottayam.html">Kottayam</a></li>
+                          <li><a class="dropdown-item" href="/districts/idukki.html">Idukki</a></li>
+                          <li><a class="dropdown-item" href="/districts/alappuzha.html">Alappuzha</a></li>
+                          <li><a class="dropdown-item" href="/districts/ernakulam.html">Ernakulam</a></li>
+                          <li><a class="dropdown-item" href="/districts/thrissur.html">Thrissur</a></li>
+                          <li><a class="dropdown-item" href="/districts/palakkad.html">Palakad</a></li>
+                          <li><a class="dropdown-item" href="/districts/malappuram.html">Malappuram</a></li>
+                          <li><a class="dropdown-item" href="/districts/kozhikode.html">Kozhikode</a></li>
+                          <li><a class="dropdown-item" href="/districts/wayanad.html">Wayanad</a></li>
+                          <li><a class="dropdown-item" href="/districts/kannur.html">Kannur</a></li>
+                          <li><a class="dropdown-item" href="/districts/kasargod.html">Kasargod</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                        <li class="nav-item">
+                          <a class="nav-link" href="../Index.html#districtheading" style="color: white;">Districts</a>
+                        </li> 
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
+    </div>
+    <!-- form -->
+    <div class="row">
+        <div class="container-fluid">
+            <form class="form1" action="./Index.html">
+                <div class="mb-3">
+                  <h1 style="text-align: center;"> <i>Login</i> </h1><br>
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email ID">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <p>New to Kerala?<a href="signup.html"> Sign up</a> here</p>
+                <a href="#">Forgot password</a>
+                <button type="submit" class="btn btn-success w-100">Submit</button>
+              </form>
+        </div>
+    </div>
+</body>
+</html>

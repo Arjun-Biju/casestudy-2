@@ -27,6 +27,21 @@
     text-shadow: 1px 1px black;
 }
 
+.content1:hover{
+    transform: scale(1.05);
+    transition-duration: 1s;
+}
+
+.content2:hover{
+    transform: scale(1.05);
+    transition-duration: 1s;
+}
+
+.content3:hover{
+    transform: scale(1.05);
+    transition-duration: 1s;
+}
+
 .carousel2{
     height: 50%;
     width: 50%;
