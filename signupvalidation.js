@@ -86,7 +86,7 @@ function validName1(){
     }
 
     else{
-        nameerror1.innerHTML="<span> validated </span>"
+        nameerror1.innerHTML="<span> First Name accepted!! </span>"
         return true;
     }
 }
@@ -101,18 +101,13 @@ function validName2(){
         return false;
     }
 
-    if (username2.value.length<2){
-        nameerror2.innerHTML="Username is too short"
-        return false;
-    }
-
     else if (username2.value.length>15){
         nameerror2.innerHTML="Username is too long"
         return false;
     }
 
     else{
-        nameerror2.innerHTML="<span> validated </span>"
+        nameerror2.innerHTML="<span> Last Name accepted!! </span>"
         return true;
     }
 }
@@ -123,11 +118,28 @@ function validPhone(){
     let regphn = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/g
 
     if(!phone.value.match(regphn)){
-        phoneerr.innerHTML="Invalid phone number";
+        if(phone.value.match(/[A-z]/g)){
+            phoneerr.innerHTML="Only numeric values accepted";
+            return false;
+        }
+        else{phoneerr.innerHTML="Invalid phone number";
         return false;
+    }    
     }
     else{
         phoneerr.innerHTML="<span>Phone number verified!</span?"
         return true;
+    }
+}
+
+// submitting condition
+
+function submit(){
+    if(validMail() && validPass() && validPhone() && validName2() && validName1()){
+        return true;
+    }
+
+    else{
+        return false;
     }
 }
