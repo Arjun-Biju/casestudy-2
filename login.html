@@ -62,12 +62,14 @@
                 <div class="mb-3">
                   <h1 style="text-align: center;"> <i>Login</i> </h1><br>
                   <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email ID">
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email ID" onkeyup="validMail()">
+                  <span id="mailError"></span>
                   <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" onkeyup="validPass()">
+                  <span id="passError"></span>
                 </div>
                 <p>New to Kerala?<a href="signup.html"> Sign up</a> here</p>
                 <a href="#">Forgot password</a>
@@ -75,5 +77,6 @@
               </form>
         </div>
     </div>
+    <script src="loginvalidation.js"></script>
 </body>
 </html>

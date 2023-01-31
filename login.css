@@ -51,3 +51,19 @@
     padding: 25px;
     border-radius: 5%;
 }
+
+span{
+    color: crimson;
+    font-size: small;
+}
+
+span > span{
+    color: green;
+    font-size: small;
+}
+
+span > p{
+    color: orange;
+    font-size: small;
+    padding-top: 5px;
+}
