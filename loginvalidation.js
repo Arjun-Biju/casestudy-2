@@ -67,7 +67,7 @@ function validPass(){
 
 // submitting condition
 
-function submit(){
+function subMit(){
     if(validMail() && validPass()){
         return true;
     }

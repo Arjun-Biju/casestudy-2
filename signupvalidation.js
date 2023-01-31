@@ -134,7 +134,7 @@ function validPhone(){
 
 // submitting condition
 
-function submit(){
+function subMit(){
     if(validMail() && validPass() && validPhone() && validName2() && validName1()){
         return true;
     }
