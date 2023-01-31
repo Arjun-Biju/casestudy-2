@@ -64,29 +64,34 @@
                   <div class="row">
                     <div class="col-6">
                         <label for="inputFirstName">First Name</label>
-                        <input type="text" class="form-control" id="inputFirstName" placeholder="firstname">
+                        <input type="text" class="form-control" id="inputFirstName" placeholder="firstname" onkeyup="validName1()">
+                        <span id="nameError1"></span>
                     </div>
                     <div class="col-6">
                         <label for="inputLastName">Last Name</label>
-                        <input type="text" class="form-control" id="inputFirstName" placeholder="lastname">
+                        <input type="text" class="form-control" id="inputlastName" placeholder="lastname" onkeyup="validName2()">
+                        <span id="nameError2"></span>
                     </div>
                   </div><br>
                   <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email ID">
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email ID" onkeyup="validMail()">
+                  <span id="mailError"></span>
                   <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPhone" class="form-label">Phone Number</label>
-                    <input type="number" class="form-control" id="exampleInputPhone" placeholder="Phone number">
+                    <input type="text" class="form-control" id="exampleInputPhone" placeholder="Phone number" onkeyup="validPhone()">
+                    <span id="phError"></span>
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" onkeyup="validPass()">
+                  <span id="passError"></span>
                 </div><br>
                 <button type="submit" class="btn btn-success w-100">Submit</button>
               </form>
         </div>
     </div>
-    <script src="formvalidation.js"></script>
+    <script src="signupvalidation.js"></script>
 </body>
 </html>

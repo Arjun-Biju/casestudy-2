@@ -65,14 +65,69 @@ function validPass(){
 
 }
 
-// submitting condition
+function validName1(){
+    let username1 = document.getElementById('inputFirstName');
+    let nameerror1 = document.getElementById('nameError1');
 
-function submit(){
-    if(validMail() && validPass()){
-        return true;
+
+    if(username1.value.trim()==''){
+        nameerror1.innerHTML="Username cannot be blank";
+        return false;
+    }
+
+    if (username1.value.length<2){
+        nameerror1.innerHTML="Username is too short"
+        return false;
+    }
+
+    else if (username1.value.length>15){
+        nameerror1.innerHTML="Username is too long"
+        return false;
     }
 
     else{
+        nameerror1.innerHTML="<span> validated </span>"
+        return true;
+    }
+}
+
+function validName2(){
+    let username2 = document.getElementById('inputlastName');
+    let nameerror2 = document.getElementById('nameError2');
+
+
+    if(username2.value.trim()==''){
+        nameerror2.innerHTML="Username cannot be blank";
         return false;
+    }
+
+    if (username2.value.length<2){
+        nameerror2.innerHTML="Username is too short"
+        return false;
+    }
+
+    else if (username2.value.length>15){
+        nameerror2.innerHTML="Username is too long"
+        return false;
+    }
+
+    else{
+        nameerror2.innerHTML="<span> validated </span>"
+        return true;
+    }
+}
+
+function validPhone(){
+    let phone=document.getElementById("exampleInputPhone")
+    let phoneerr=document.getElementById("phError")
+    let regphn = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/g
+
+    if(!phone.value.match(regphn)){
+        phoneerr.innerHTML="Invalid phone number";
+        return false;
+    }
+    else{
+        phoneerr.innerHTML="<span>Phone number verified!</span?"
+        return true;
     }
 }
